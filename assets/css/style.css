@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@800&family=Barlow:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --cor0: #FFFFFF;
+    --white: #FFFFFF;
     --cor1: #7CC5ED;
     --cor2: #7BEDD8;
     --cor3: #EDD37B;
@@ -10,6 +10,8 @@
     --font1: "Barlow", sans-serif;
     --font2: "Azeret Mono", monospace; /*para títulos*/
     --font3: "Ubuntu", sans-serif;
+    
+    --gap: 1.5rem;
 }
 * {
     margin: 0;
@@ -54,8 +56,13 @@ h6 {
 .main-bg {
     background-image: url(../img/main-bg.png);
     background-position: center center;
+    background-size: cover;
 }
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: var(--gap);
+}
+.white-bg {
+    background: var(--white);
 }
